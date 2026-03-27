@@ -1,0 +1,52 @@
+# blueprint.yaml
+slug: blueprint-rpi-tethering
+type: Tutorial
+category: "Reference applications"
+expertiseLevel: "Intermediate"               # Beginner | Intermediate | Advanced
+tags: ["Cellular", "Tethering", "PPP", "Raspberry Pi", "B5 SoM", "Console"]
+icon: assets/hero.jpg                        # relative path to an image or SVG
+gitrepo: https://github.com/particle-iot/blueprint-rpi-tethering
+name: "Raspberry Pi Cellular Tethering"
+shortDescription: "Provide cellular internet to a Raspberry Pi using a B504e and M-Hat over UART PPP."
+version: 1.0.0                              # use SemVer
+models: ["B504e", "B524"]
+language: ["C++", "Bash"]
+cloudServices: []
+integrations: []
+supportedDevices:
+  - name: B5-SoM (B504e) — tested
+    link: https://docs.particle.io/reference/datasheets/b-series/b5som-datasheet/
+  - name: B5-SoM (B524)
+    link: https://docs.particle.io/reference/datasheets/b-series/b5som-datasheet/
+webIdeLink:
+webSetupLink:
+hardwareDependencies:
+  - name: B504e or B524 module
+    link: https://docs.particle.io/reference/datasheets/b-series/b5som-datasheet/
+  - name: M-Hat carrier board
+    link: https://docs.particle.io/reference/datasheets/m-series/m-hat-datasheet/
+  - name: Raspberry Pi 4 or 5
+  - name: Cellular antenna (PARANTCW1)
+  - name: USB-C PD power supply
+introduction: |
+  A reference design for providing cellular internet to a Raspberry Pi using
+  a Particle B504e module and M-Hat carrier board. The B504e exposes its
+  cellular connection as a PPP endpoint over UART; the Raspberry Pi consumes
+  it as a standard network interface — no Particle SDK required on the Linux side.
+description: |
+  This tutorial demonstrates how to build a cellular tethering solution using the
+  Particle B504e (or B524) and M-Hat carrier board. Firmware on the B504e manages
+  a UART PPP endpoint using a non-blocking state machine with cloud monitoring,
+  auto-recovery, and OTA support. A setup script on the Raspberry Pi configures
+  NetworkManager, pppd, and ModemManager to bring up a ppp0 interface automatically
+  on boot. The architecture is designed for easy extension with sensors, VPN,
+  internet gateway, or remote SSH access over cellular.
+additionalResources:
+  - title: Particle Tethering Documentation
+    link: https://docs.particle.io/reference/device-os/tethering/
+  - title: B5 SoM Datasheet
+    link: https://docs.particle.io/reference/datasheets/b-series/b5som-datasheet/
+  - title: M-Hat Datasheet
+    link: https://docs.particle.io/reference/datasheets/m-series/m-hat-datasheet/
+  - title: Particle Developer Docs
+    link: https://developer.particle.io/
