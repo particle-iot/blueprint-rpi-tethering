@@ -4,7 +4,7 @@ type: Tutorial
 category: "Reference applications"
 expertiseLevel: "Intermediate"               # Beginner | Intermediate | Advanced
 tags: ["Cellular", "Tethering", "PPP", "Raspberry Pi", "B5 SoM", "Console"]
-icon: assets/hero.jpg                        # relative path to an image or SVG
+icon: assets/hello-world.jpg                        # relative path to an image or SVG
 gitrepo: https://github.com/particle-iot/blueprint-rpi-tethering
 name: "Raspberry Pi Cellular Tethering"
 shortDescription: "Provide cellular internet to a Raspberry Pi using a B504e and M-Hat over UART PPP."
