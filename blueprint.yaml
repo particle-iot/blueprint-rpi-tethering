@@ -14,7 +14,7 @@ language: ["C++", "Bash"]
 cloudServices: []
 integrations: []
 supportedDevices:
-  - name: B5-SoM (B504e) — tested
+  - name: B5-SoM (B504e)
     link: https://docs.particle.io/reference/datasheets/b-series/b5som-datasheet/
   - name: B5-SoM (B524)
     link: https://docs.particle.io/reference/datasheets/b-series/b5som-datasheet/

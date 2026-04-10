@@ -35,7 +35,7 @@ Once `ppp0` is up, the Raspberry Pi has a standard network interface for cellula
 
 ### Tools & Materials
 
-- Particle B504e module (tested) or B524
+- Particle B504e or B524 module (both tested)
 - M-Hat carrier board
 - Raspberry Pi 4 or Raspberry Pi 5 (tested on RPi 5)
 - Cellular antenna PARANTCW1 (required)
@@ -46,7 +46,7 @@ Once `ppp0` is up, the Raspberry Pi has a standard network interface for cellula
 | Device | Modem | Testing Status |
 |--------|-------|----------------|
 | B504e | EG91-NAX | Tested |
-| B524 | EG91-E | Not tested |
+| B524 | EG91-E | Tested |
 
 ---
 
