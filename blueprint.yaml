@@ -19,7 +19,7 @@ supportedDevices:
   - name: B5-SoM (B524)
     link: https://docs.particle.io/reference/datasheets/b-series/b5som-datasheet/
 webIdeLink:
-webSetupLink:
+webSetupLink: https://setup.particle.io/?app=particle-blueprint-rpi-tethering
 hardwareDependencies:
   - name: B504e or B524 module
     link: https://docs.particle.io/reference/datasheets/b-series/b5som-datasheet/
