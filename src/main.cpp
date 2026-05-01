@@ -8,6 +8,7 @@
  */
 
 #include "Particle.h"
+#include "request_handler.h"
 
 SerialLogHandler logHandler(LOG_LEVEL_INFO);
 SYSTEM_MODE(SEMI_AUTOMATIC);
@@ -93,6 +94,10 @@ void updateStateMachine();
 int  reconnectTether(String args);
 void firmwareUpdateHandler(system_event_t event, int param);
 
+
+void ctrl_request_custom_handler(ctrl_request* req) {
+    particle::RequestHandler::instance()->process(req);
+}
 
 void setup() {
     appStateMachine.begin();
